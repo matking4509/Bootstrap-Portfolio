@@ -2,49 +2,80 @@
 <html lang="en-us">
 
 <head>
+    <!-- Style Sheet Links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <meta charset="UTF-8">
     <title>My First Page</title>
 </head>
 
 <body> 
-<header>
-        <div class="innerBanner">
-            <div class="nameBox">Mat King</div>
-            <nav class="menuBox">
-                <ul id="menu">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-</header>
- 
-<section class="mainContainer">
-    <div class="contact">
-        <h2 class="greenText">Contact</h2>
-        <hr>
-        <form action="#" class="contactForm">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" class="ContactInput" placeholder="Nobody Jones"><br>
-            <label for="email">Email</label><br>
-            <input type="text" name="email" id="email" class="ContactInput"placeholder="youname@gmail.com"><br>
-            <label for="name">Message</label><br>
-            <textarea rows="10" cols="40" name="message" id="message" class="ContactInput" placeholder="Oh Mat, You're so cool!"></textarea><br>
-            <input class="contactButton" type="submit" value="Submit">
-        </form>
-    </div> 
-</section>
-
-<footer>
-    <div class="footerContainer">
-        <div id="footerText">
-            &copy; Copyright Mat King 2018
-        </div>
+  <div class="container mx-auto sticky-top m border-bottom border-dark">
+    <div class="row bg-light">
+      <div class="col-xs-12 col-md-4 col-lg-4 align-self-start tealBackground">
+        <h1 class="text-white align-baseline text-center">Mat King</h1>
+      </div>
+      <div class="col-md-3 col-lg-4"></div>
+      <div class="col-md-5 col-lg-4 align-self-end">
+      <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <!-- Links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
     </div>
-</footer>
+  </div>
+ 
+<div class="container bg-light mt-3 py-3 mb-3">
+    <div class="row">
+        <div class="col-12 ml-3">
+            <h2 class="greenText"><b>Contact</b></h2><hr>
+        </div>
+        <form>
+            <div class="row mx-sm-auto mx-md-3">
+                <div class="col-sm-12 col-lg-10">
+                    <label for="contactName">Name</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="Example: Joe Blow">
+                </div>
+                <div class="col-sm-12 col-lg-10">
+                <label for="contactEmail">eMail</label>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="Example: JoeBlow@gmail.com">
+                </div>
+                <div class="col-sm-12 col-lg-10">
+                <label for="contactMessage">Message:</label>
+                        <textarea class="form-control" id="contactMessage" rows="6"></textarea>
+                </div>
+                <div class="col-sm-12 col-lg-10 mt-3">
+                <button type="submit" class="btn btn-primary tealBackground">Submit</button>
+                </div>
+            </div>    
+        </form>                            
+    </div> 
+ </div>
+
+
+<!-- Footer -->
+<div class="footerSpace"></div> <!--Div to keep Text from scrolling behind footer -->
+<div class="container sticky-bottom border-bottom border-dark fixed-bottom">
+  <footer class="row bg-dark text-white">
+  <!-- Copyright -->
+  <div class="col-12 footerBorder">
+  <div class="footer-copyright text-center py-3">© 2018 Copyright: Mat King</div>
+  </div>  
+  <!-- Copyright -->
+  </footer>
+</div>
 
 </body>
 </html>
